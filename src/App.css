@@ -587,3 +587,105 @@ body {
   margin-top: 5px;
 }
 
+/* =========================
+   📱 Mobile Responsiveness
+   ========================= */
+@media (max-width: 1024px) {
+  .portfolio {
+    width: 95%;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .navbar a:not(:last-child) {
+    border-right: none;
+    padding-right: 12px;
+  }
+
+  .experience-row,
+  .publication-row {
+    grid-template-columns: 1fr 1fr; /* merge year + details */
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .navbar {
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .navbar a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .experience-row,
+  .publication-row {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 10px;
+  }
+
+  .project-item {
+    flex-direction: column !important; /* stack image and text */
+  }
+
+  .project-image img {
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h1 {
+    font-size: 1.8rem;
+  }
+
+  .about h2 {
+    font-size: 1.2rem;
+  }
+
+  .navbar a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-icons span {
+    font-size: 0.9rem;
+  }
+
+  .academic-item h2,
+  .role-company h2,
+  .publication-item h2,
+  .project-item h2,
+  .talk-item h2,
+  .honor-item h2 {
+    font-size: 1rem;
+  }
+}
