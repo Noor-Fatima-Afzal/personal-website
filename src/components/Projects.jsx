@@ -1,10 +1,10 @@
 import React from "react";
 import audioImg from "../images/audio.jpg";
 import edupathImg from "../images/edupath.png";
-import dentalImg from "../images/dental.jpg";
+import dentalImg from "../images/dicom.jpeg";
 import groqvisionImg from "../images/groqvision.jpg";
 import lahoreImg from "../images/lahore.jpg";
-import nasaImg from "../images/nasa.jpg";
+import nasaImg from "../images/nasa.png";
 import whatsappImg from "../images/whatsapp.jpg";
 import accordImg from "../images/accord.jpg";
 
