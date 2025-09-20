@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+.portfolio {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.navbar a {
+  cursor: pointer;
+}
+
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.social-icons .icons a img {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+  transition: transform 0.2s;
+  filter: grayscale(30%);
+}
+
+.social-icons .icons a img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
+/* Navbar */
+/* .navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.navbar a.active {
+  border-bottom: 4px solid #a17400;
+  color: #a17400;
+  font-weight: 600; */
+/* } */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  background: #fff;
+  padding: 15px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:not(:last-child) {
+  border-right: 1px solid #000;
+  padding-right: 20px;
+}
+
+.navbar a.active {
+  background: #a56905;  /* Golden brown highlight */
+  color: #fff;
+  border-radius: 2px;
+}
+.navbar a:hover {
+  background: #a17400;  /* Darker golden brown on hover */
+  color: #fff;
+  border-radius: 2px;
+}
+
+
+/* About Section */
+.about {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* .about h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 10px;
+} */
+
+.about h2 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 10px;
+}
+
+.about .sub {
+  font-size: 1rem;
+  margin: 15px 0;
+}
+
+.about .sub a {
+  color: #a17400;
+  text-decoration: none;
+}
+
+.about .description {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Profile Section Centered */
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.social-icons span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.social-icons .icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons .icons a img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+  filter: grayscale(30%);
+}
+
+.social-icons .icons a img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
+/* Academics Section */
+.academics {
+  margin-top: 5px !important;
+  text-align: center;
+}
+
+.academics h1 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 20px;
+}
+
+.academic-item {
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.academic-item h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.academic-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.academic-item .year {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+}
+
+
+/* Experience Section */
+.experience {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.experience h1 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 10px;
+  /* margin-top: 5px; */
+}
+
+.experience-item {
+  margin-bottom: 25px;
+}
+
+.experience-item h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.experience-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.experience-item .year {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+}
+
+.experience-item .details {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+/* Research Section */
+.research {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.research h1 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 20px;
+}
+
+.research-item {
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.research-item h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.research-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 10px;
+}
+
+.research-item .year {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+}
+
+/* Publications Section */
+.publications {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.publications h1 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 20px;
+}
+
+.publication-item {
+  margin-bottom: 25px;
+}
+
+.publication-item h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.publication-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.publication-item .year {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+}
+
+.publication-item .details {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+
+/* Projects Section */
+.projects {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  margin-bottom: 25px;
+}
+
+.project-item h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.project-item .details {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+.project-item .year {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+}
+
+.projects {
+  margin: 40px 0;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;   /* ✅ text and image take equal vertical height */
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.project-content,
+.project-image {
+  flex: 1;   /* ✅ equal width */
+}
+
+.project-image img {
+  width: 100%;           /* ✅ fill its container */
+  height: 100%;          /* ✅ scale with equal height */
+  object-fit: cover;     /* ✅ crops to maintain proportion */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+}
+
+.project-image img {
+  width: 100%;
+  height: 250px;    /* ✅ fixed height */
+  object-fit: cover;
+}
+
+
+/* Talks Section */
+.talks {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.talks h1 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 20px;
+}
+
+.talk-item {
+  margin-bottom: 25px;
+}
+
+.talk-item h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.talk-item .details {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+.talk-item .year {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Footer */
+.footer {
+  width: 100vw;         /* ✅ span viewport */
+  margin-left: calc(-50vw + 50%); /* ✅ align to screen edge */
+  background: #f5f5f5;
+  padding: 3px 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.footer-icons {
+  display: flex;              /* ✅ arrange horizontally */
+  align-items: center;        /* ✅ vertically align icons */
+  gap: 15px;                  /* ✅ spacing between icons */
+}
+
+.footer-icons a img {
+  width: 24px;
+  margin-right: 12px;
+  transition: transform 0.2s;
+}
+
+.footer-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Honors Section */
+.honors {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.honors h1 {
+  font-size: 2rem;
+  color: #a17400;
+  margin-bottom: 20px;
+}
+
+.honor-item {
+  margin-bottom: 25px;
+}
+
+.honor-item h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.honor-item .details {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+.honor-item .year {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+}
+
